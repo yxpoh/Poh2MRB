@@ -1,0 +1,26 @@
+onLoadName = "1 Out of 3";
+OnLoadMission = "Blufor are said to be making an assault on Agios Kosmas..... but for what?";
+
+#include "description\definitions.hpp"
+#include "description\cfgNotifications.hpp"
+#include "description\cfgParams.hpp"
+#include "description\cfgRespawnTemplates.hpp"
+#include "description\cfgDebriefingSections.hpp"
+#include "description\cfgEventHandlers.hpp"
+#include "description\ACESettings.hpp"
+
+#include "f\spect\config.hpp"
+class CfgFunctions {
+    #include "description\cfgFunctions.hpp"
+    class F {
+        class safeStart {
+            file = "f\safeStart";
+            class safety{};
+        };
+        #include "f\spect\functions.hpp"
+    };
+    class PHX {
+        #include "f\functions.hpp"
+    };
+};
+#include "f\display.hpp"

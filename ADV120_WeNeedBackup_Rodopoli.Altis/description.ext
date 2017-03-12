@@ -1,0 +1,27 @@
+author = "Sgt Poh";
+onLoadName = "We Need Backup! Revised";
+OnLoadMission = "A Blufor convoy returning to base from Rodopoli had been ambushed with IEDs. Opfor is expected to make contact with them any moment. Blufor are to secure and extract them back to base.";
+
+#include "description\definitions.hpp"
+#include "description\cfgNotifications.hpp"
+#include "description\cfgParams.hpp"
+#include "description\cfgRespawnTemplates.hpp"
+#include "description\cfgDebriefingSections.hpp"
+#include "description\cfgEventHandlers.hpp"
+#include "description\ACESettings.hpp"
+
+#include "f\spect\config.hpp"
+class CfgFunctions {
+    #include "description\cfgFunctions.hpp"
+    class F {
+        class safeStart {
+            file = "f\safeStart";
+            class safety{};
+        };
+        #include "f\spect\functions.hpp"
+    };
+    class PHX {
+        #include "f\functions.hpp"
+    };
+};
+#include "f\display.hpp"
